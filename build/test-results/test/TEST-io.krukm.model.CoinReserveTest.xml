@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.CoinReserveTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:39:31" hostname="Matthews-MacBook-Pro.local" time="0.009">
+<testsuite name="io.krukm.model.CoinReserveTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:41:43" hostname="Matthews-MacBook-Pro.local" time="0.01">
   <properties/>
   <testcase name="addTwentyFiveToTwentyFiveStackWhenAccepted" classname="io.krukm.model.CoinReserveTest" time="0.002"/>
   <testcase name="addTenTwentyFivesWhenReserveIsStocked" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
@@ -12,17 +12,17 @@
   <testcase name="getTheTotalOfCoinReserveWhenCalled" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="whenOverpaidForProductAddChangeToCoinReturn" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="addFiveToFiveStackWhenAccepted" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
-  <testcase name="whenOverPaidAndReserveIsOutOfTwentyFivesAndTensMakeChangeWithFives" classname="io.krukm.model.CoinReserveTest" time="0.001"/>
+  <testcase name="whenOverPaidAndReserveIsOutOfTwentyFivesAndTensMakeChangeWithFives" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="whenFiveStackIsEmptyAndTenStackHasOneMakeSureChangeCanNotBeMade" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="whenOverPaidAndReserveIsOutOfTensMakeChangeWithTwentyFivesAndFives" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="addTenFivesWhenReserveIsStocked" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
-  <testcase name="addTenTensWhenReserveIsStocked" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
+  <testcase name="addTenTensWhenReserveIsStocked" classname="io.krukm.model.CoinReserveTest" time="0.001"/>
   <testcase name="whenCoinReturnRequestedClearCoinReturn" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="removeTwentyFiveWithRemoveCoin" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="acceptFiveWhenAdded" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="addTenToTenStackWhenAccepted" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="whenOverPaidAndReserveIsOutOfTwentyFivesMakeChangeWithTensAndFives" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
-  <testcase name="checkCoinReserveToMakeSureChangeCanBeMadeIfOverPaid" classname="io.krukm.model.CoinReserveTest" time="0.001"/>
+  <testcase name="checkCoinReserveToMakeSureChangeCanBeMadeIfOverPaid" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="acceptTwentyFiveWhenAdded" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="getCoinTotalWhenUsingStackTotalMethod" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
