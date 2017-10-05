@@ -9,9 +9,8 @@ public class VendingMachine implements UpdateDisplay {
     private Inventory inventory = new Inventory();
 
 
-
     VendingMachine() {
-        display.setMessage(0,0);
+        display.setMessage(0, 0);
     }
 
     void insertCoin(Coin coin) {
@@ -49,8 +48,11 @@ public class VendingMachine implements UpdateDisplay {
         return false;
     }
 
-    boolean makePurchase(Product product, Stack<Coin> coinHold) {
-        if (enoughCoinsEntered(product, coinHold)) {
+    boolean selectProduct(Product product, Stack<Coin> coinHold) {
+        if (!inventory.productInStock(product)) {
+            display.setMessage(3, product.price);
+            return false;
+        } else if (enoughCoinsEntered(product, coinHold)) {
             if (inventory.productInStock(product)) {
                 inventory.dispenseProduct(product);
                 display.setMessage(1, product.price);
@@ -62,9 +64,6 @@ public class VendingMachine implements UpdateDisplay {
                 }
                 coinReserve.depositCoins(coinHold);
                 return true;
-            } else if (!inventory.productInStock(product)){
-                display.setMessage(3, product.price);
-                return false;
             }
         }
         return false;

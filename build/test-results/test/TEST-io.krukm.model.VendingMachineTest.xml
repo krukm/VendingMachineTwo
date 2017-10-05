@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.VendingMachineTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2017-10-05T18:56:45" hostname="Matthews-MacBook-Pro.local" time="0.004">
+<testsuite name="io.krukm.model.VendingMachineTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2017-10-05T18:58:16" hostname="Matthews-MacBook-Pro.local" time="0.005">
   <properties/>
   <testcase name="whenPurchaseIsAbortedReturnInsertedCoins" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
-  <testcase name="whenPurchaseCompleteDisplayReadsThankYou" classname="io.krukm.model.VendingMachineTest" time="0.001"/>
+  <testcase name="whenPurchaseCompleteDisplayReadsThankYou" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
   <testcase name="whenInsertedCoinsShouldBeAddedToTemporaryHoldUntilProductSelected" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
   <testcase name="whenCheckingForEnoughCoinsUpdateDisplayIfNotEnoughCoinsEntered" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
   <testcase name="whenInsertingCoinsDisplayShouldShowTotalAmountInsertedSoFar" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
-  <testcase name="whenEncounteringIdleFullyStockedVendingMachineDisplayShouldGiveInstructionToInsertCoin" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
+  <testcase name="whenEncounteringIdleFullyStockedVendingMachineDisplayShouldGiveInstructionToInsertCoin" classname="io.krukm.model.VendingMachineTest" time="0.001"/>
   <testcase name="whenNoCoinsInsertedAndCanMakeChangeDisplayInsertCoin" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
   <testcase name="whenProductSelectedCheckIfEnoughCoinsInsertedToPurchase" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
   <testcase name="whenEnoughCoinsAndProductSelectedDispenseProduct" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
   <testcase name="whenEnoughCoinsButSelectedProductIsOutOfStockDisplaySoldOut" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
   <testcase name="whenVendingMachineProductsAreStockedInventoryHasTenOfEachProduct" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
-  <testcase name="whenCoinIsNotAcceptedAddItToTheCoinReturn" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
+  <testcase name="whenCoinIsNotAcceptedAddItToTheCoinReturn" classname="io.krukm.model.VendingMachineTest" time="0.001"/>
   <testcase name="whenPurchaseCompletedButOverPaidRemoveChange" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
-  <testcase name="whenVendingMachineCoinsAreStockedCoinSleevesHaveTenOfEachCoin" classname="io.krukm.model.VendingMachineTest" time="0.001"/>
-  <testcase name="whenNoCoinsInsertedAndCanNotMakeChangeDisplayExactChangeOnly" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
+  <testcase name="whenVendingMachineCoinsAreStockedCoinSleevesHaveTenOfEachCoin" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
+  <testcase name="whenNoCoinsInsertedAndCanNotMakeChangeDisplayExactChangeOnly" classname="io.krukm.model.VendingMachineTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
