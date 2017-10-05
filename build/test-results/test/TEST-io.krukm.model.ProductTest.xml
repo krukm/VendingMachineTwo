@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.ProductTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:22:56" hostname="Matthews-MacBook-Pro.local" time="0.001">
+<testsuite name="io.krukm.model.ProductTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:25:07" hostname="Matthews-MacBook-Pro.local" time="0.001">
   <properties/>
-  <testcase name="whenChipsIsCalledReturnChipsPrice" classname="io.krukm.model.ProductTest" time="0.001"/>
+  <testcase name="whenChipsIsCalledReturnChipsPrice" classname="io.krukm.model.ProductTest" time="0.0"/>
   <testcase name="whenCandyIsCalledReturnCandyPrice" classname="io.krukm.model.ProductTest" time="0.0"/>
   <testcase name="whenColaIsCalledReturnColaPrice" classname="io.krukm.model.ProductTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
