@@ -1,13 +1,12 @@
 package io.krukm.model;
 
-
 import java.util.Stack;
 
 public class VendingMachine implements UpdateDisplay {
 
-    Display display = new Display();
+    private Display display = new Display();
     CoinReserve coinReserve = new CoinReserve();
-    Inventory inventory = new Inventory();
+    private Inventory inventory = new Inventory();
 
 
     VendingMachine() {
@@ -53,6 +52,14 @@ public class VendingMachine implements UpdateDisplay {
             }
         }
         return false;
+    }
+
+    public void stockProducts() {
+        inventory.stockInventory();
+    }
+
+    public int checkProductStock(Product product) {
+        return inventory.getProductStock(product);
     }
 
     @Override

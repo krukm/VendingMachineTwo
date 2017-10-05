@@ -13,8 +13,10 @@ public class VendingMachineTest {
     private Stack<Coin> coins = new Stack<>();
 
     @Test
-    public void whenEncounteringIdleVendingMachineDisplayShouldGiveInstructionToInsertCoin() {
-        assertEquals("INSERT COIN", vendingMachine.display.getMessage());
+    public void whenEncounteringIdleFullyStockedVendingMachineDisplayShouldGiveInstructionToInsertCoin() {
+        vendingMachine.stockProducts();
+        vendingMachine.coinReserve.stockReserve();
+        assertEquals("INSERT COIN", vendingMachine.show());
     }
 
     @Test
@@ -54,7 +56,7 @@ public class VendingMachineTest {
     public void whenCheckingForEnoughCoinsUpdateDisplayIfNotEnoughCoinsEntered() {
         coins.add(Coin.COIN_FOUR);
         vendingMachine.enoughCoinsEntered(Product.PRODUCT_TWO, coins);
-        assertEquals("PRICE 0.50", vendingMachine.display.getMessage());
+        assertEquals("PRICE 0.50", vendingMachine.show());
     }
 
     @Test
@@ -62,7 +64,7 @@ public class VendingMachineTest {
         while (coins.size() < 5) {
             coins.add(Coin.COIN_FOUR);
         }
-        vendingMachine.inventory.stockInventory();
+        vendingMachine.stockProducts();
         assertTrue(vendingMachine.makePurchase(Product.PRODUCT_ONE, coins));
     }
 
@@ -72,7 +74,7 @@ public class VendingMachineTest {
             coins.add(Coin.COIN_FOUR);
         }
         vendingMachine.makePurchase(Product.PRODUCT_ONE, coins);
-        assertEquals("SOLD OUT", vendingMachine.display.getMessage());
+        assertEquals("SOLD OUT", vendingMachine.show());
     }
 
     @Test
@@ -95,5 +97,23 @@ public class VendingMachineTest {
         vendingMachine.coinReserve.stockReserve();
         vendingMachine.updateDisplay();
         assertEquals("INSERT COIN", vendingMachine.show());
+    }
+
+    @Test
+    public void whenPurchaseCompleteDisplayReadsThankYou() {
+        while (coins.size() < 5) {
+            coins.add(Coin.COIN_FOUR);
+        }
+        vendingMachine.stockProducts();
+        vendingMachine.makePurchase(Product.PRODUCT_ONE, coins);
+        assertEquals("THANK YOU", vendingMachine.show());
+    }
+
+    @Test
+    public void whenVendingMachineIsStockedInventoryHasTenOfEachProduct() {
+        vendingMachine.stockProducts();
+        assertEquals(10, vendingMachine.checkProductStock(Product.PRODUCT_ONE));
+        assertEquals(10, vendingMachine.checkProductStock(Product.PRODUCT_TWO));
+        assertEquals(10, vendingMachine.checkProductStock(Product.PRODUCT_THREE));
     }
 }

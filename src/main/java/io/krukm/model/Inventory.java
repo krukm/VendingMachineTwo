@@ -1,6 +1,5 @@
 package io.krukm.model;
 
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -50,6 +49,11 @@ public class Inventory {
     }
 
     public void stockInventory() {
+
+        productOneRow.clear();
+        productTwoRow.clear();
+        productThreeRow.clear();
+
         for (int i = 0; i < 10; i++) {
             productOneRow.add(Product.PRODUCT_ONE);
             productTwoRow.add(Product.PRODUCT_TWO);
