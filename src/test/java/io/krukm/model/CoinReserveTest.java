@@ -1,5 +1,6 @@
 package io.krukm.model;
 
+
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -63,5 +64,11 @@ public class CoinReserveTest {
     public void addTenQuartersWhenReserveIsStocked() {
         coinReserve.stockReserve();
         assertEquals(10, coinReserve.quarterStack.size());
+    }
+
+    @Test
+    public void getTheTotalOfCoinReserveWhenCalled() {
+        coinReserve.stockReserve();
+        assertEquals((Coin.NICKEL.value * 10) + (Coin.DIME.value * 10) + (Coin.QUARTER.value * 10), coinReserve.reserveTotal(coinReserve.nickelStack, coinReserve.dimeStack, coinReserve.quarterStack));
     }
 }
