@@ -9,13 +9,16 @@ public class VendingMachine implements UpdateDisplay {
     private Inventory inventory = new Inventory();
 
 
+
     VendingMachine() {
-        display.setMessage(0, 0);
+        display.setMessage(0,0);
     }
 
     void insertCoin(Coin coin) {
         if (coinReserve.coinAccepted(coin)) {
-            coinReserve.coinHold.add(coin);
+            coinReserve.coinHold.push(coin);
+        } else {
+            coinReserve.rejectCoin(coin);
         }
     }
 
@@ -28,7 +31,12 @@ public class VendingMachine implements UpdateDisplay {
     }
 
     Stack<Coin> activateCoinReturn() {
-        return coinReserve.getCoinReturn();
+        coinReserve.refundCoins();
+        return getCoinReturn();
+    }
+
+    Stack<Coin> getCoinReturn() {
+        return coinReserve.coinReturn;
     }
 
     boolean enoughCoinsEntered(Product product, Stack<Coin> coinHold) {
@@ -54,7 +62,7 @@ public class VendingMachine implements UpdateDisplay {
                 }
                 coinReserve.depositCoins(coinHold);
                 return true;
-            } else if (!inventory.productInStock(product)) {
+            } else if (!inventory.productInStock(product)){
                 display.setMessage(3, product.price);
                 return false;
             }
