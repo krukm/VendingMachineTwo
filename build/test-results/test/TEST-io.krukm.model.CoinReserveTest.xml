@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.CoinReserveTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:18:17" hostname="Matthews-MacBook-Pro.local" time="0.005">
+<testsuite name="io.krukm.model.CoinReserveTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:20:43" hostname="Matthews-MacBook-Pro.local" time="0.006">
   <properties/>
   <testcase name="addNickelToNickelStackWhenAccepted" classname="io.krukm.model.CoinReserveTest" time="0.002"/>
-  <testcase name="acceptQuarterWhenAdded" classname="io.krukm.model.CoinReserveTest" time="0.001"/>
+  <testcase name="acceptQuarterWhenAdded" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="addQuarterToQuarterStackWhenAccepted" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="addTenDimesWhenReserveIsStocked" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="getTheTotalOfCoinReserveWhenCalled" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="rejectPennyWhenAdded" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
+  <testcase name="removeDimeWithRemoveCoin" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
+  <testcase name="removeQuarterWithRemoveCoin" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
+  <testcase name="removeNickelWithRemoveCoin" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="acceptDimeWhenAdded" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="acceptNickelWhenAdded" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
   <testcase name="addDimeToDimeStackWhenAccepted" classname="io.krukm.model.CoinReserveTest" time="0.0"/>
