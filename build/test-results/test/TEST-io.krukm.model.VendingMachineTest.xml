@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.VendingMachineTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:57:16" hostname="Matthews-MacBook-Pro.local" time="0.0">
+<testsuite name="io.krukm.model.VendingMachineTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:58:42" hostname="Matthews-MacBook-Pro.local" time="0.0">
   <properties/>
+  <testcase name="whenInsertedCoinsShouldBeAddedToTemporaryHoldUntilProductSelected" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
   <testcase name="whenInsertingCoinsDisplayShouldShowTotalAmountInsertedSoFar" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
   <testcase name="whenEncounteringIdleVendingMachineDisplayShouldGiveInstructionToInsertCoin" classname="io.krukm.model.VendingMachineTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
