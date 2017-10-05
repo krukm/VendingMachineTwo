@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.InventoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:29:30" hostname="Matthews-MacBook-Pro.local" time="0.001">
+<testsuite name="io.krukm.model.InventoryTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:31:06" hostname="Matthews-MacBook-Pro.local" time="0.002">
   <properties/>
   <testcase name="whenInventoryIsStockedTenCandiesAreAdded" classname="io.krukm.model.InventoryTest" time="0.0"/>
+  <testcase name="whenColaIsCalledPullColaFromColaStack" classname="io.krukm.model.InventoryTest" time="0.0"/>
   <testcase name="whenInventoryIsStockedTenChipsAreAdded" classname="io.krukm.model.InventoryTest" time="0.0"/>
+  <testcase name="whenChipsIsCalledPullChipsFromChipStack" classname="io.krukm.model.InventoryTest" time="0.0"/>
+  <testcase name="whenCandyIsCalledPullCandyFromCandyStack" classname="io.krukm.model.InventoryTest" time="0.0"/>
   <testcase name="whenInventoryIsStockedTenColasAreAdded" classname="io.krukm.model.InventoryTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
