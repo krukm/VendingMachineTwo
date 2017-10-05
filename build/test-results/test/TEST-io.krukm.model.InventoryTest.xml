@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.InventoryTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:55:24" hostname="Matthews-MacBook-Pro.local" time="0.002">
+<testsuite name="io.krukm.model.InventoryTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:57:16" hostname="Matthews-MacBook-Pro.local" time="0.003">
   <properties/>
-  <testcase name="whenInventoryIsStockedTenProductOneAreAdded" classname="io.krukm.model.InventoryTest" time="0.0"/>
+  <testcase name="whenInventoryIsStockedTenProductOneAreAdded" classname="io.krukm.model.InventoryTest" time="0.001"/>
   <testcase name="whenInventoryIsStockedTenProductThreeAreAdded" classname="io.krukm.model.InventoryTest" time="0.0"/>
   <testcase name="whenInventoryIsStockedTenProductTwoAreAdded" classname="io.krukm.model.InventoryTest" time="0.0"/>
-  <testcase name="getCurrentProductOneStockWithGetProductStock" classname="io.krukm.model.InventoryTest" time="0.0"/>
+  <testcase name="getCurrentProductOneStockWithGetProductStock" classname="io.krukm.model.InventoryTest" time="0.001"/>
   <testcase name="whenProductIsNotInStockReturnFalse" classname="io.krukm.model.InventoryTest" time="0.0"/>
-  <testcase name="whenProductTwoIsCalledPullProductTwoFromProductStack" classname="io.krukm.model.InventoryTest" time="0.001"/>
+  <testcase name="whenProductTwoIsCalledPullProductTwoFromProductStack" classname="io.krukm.model.InventoryTest" time="0.0"/>
   <testcase name="whenProductOneIsCalledPullProductOneFromProductOneStack" classname="io.krukm.model.InventoryTest" time="0.0"/>
   <testcase name="getCurrentProductTwoStockWithGetProductStock" classname="io.krukm.model.InventoryTest" time="0.0"/>
   <testcase name="whenProductThreeIsCalledPullProductThreeFromProductThreeStack" classname="io.krukm.model.InventoryTest" time="0.0"/>

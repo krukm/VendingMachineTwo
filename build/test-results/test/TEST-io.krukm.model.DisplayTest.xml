@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.DisplayTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:55:24" hostname="Matthews-MacBook-Pro.local" time="0.001">
+<testsuite name="io.krukm.model.DisplayTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-10-05T17:57:16" hostname="Matthews-MacBook-Pro.local" time="0.002">
   <properties/>
   <testcase name="displayThankYouWhenCodeOneSent" classname="io.krukm.model.DisplayTest" time="0.0"/>
   <testcase name="displaySoldOutWhenCodeThreeSent" classname="io.krukm.model.DisplayTest" time="0.0"/>
   <testcase name="displayExactChangeOnlyWhenCodeFourSent" classname="io.krukm.model.DisplayTest" time="0.0"/>
   <testcase name="displayInsertCoinWhenNoCodeSent" classname="io.krukm.model.DisplayTest" time="0.0"/>
-  <testcase name="displayPricePlusCurrentPriceWhenCodeTwoSent" classname="io.krukm.model.DisplayTest" time="0.001"/>
-  <testcase name="displayTotalChangeEnteredWhenCodeFiveSent" classname="io.krukm.model.DisplayTest" time="0.0"/>
+  <testcase name="displayPricePlusCurrentPriceWhenCodeTwoSent" classname="io.krukm.model.DisplayTest" time="0.0"/>
+  <testcase name="displayTotalChangeEnteredWhenCodeFiveSent" classname="io.krukm.model.DisplayTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
