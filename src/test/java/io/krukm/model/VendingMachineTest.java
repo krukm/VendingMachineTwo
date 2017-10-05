@@ -1,6 +1,5 @@
 package io.krukm.model;
 
-
 import org.junit.Test;
 
 import java.util.Stack;
@@ -48,5 +47,12 @@ public class VendingMachineTest {
             coins.add(Coin.COIN_FOUR);
         }
         assertTrue(vendingMachine.enoughCoinsEntered(Product.PRODUCT_THREE, coins));
+    }
+
+    @Test
+    public void whenCheckingForEnoughCoinsUpdateDisplayIfNotEnoughCoinsEntered() {
+        coins.add(Coin.COIN_FOUR);
+        vendingMachine.enoughCoinsEntered(Product.PRODUCT_TWO, coins);
+        assertEquals("PRICE 0.50", vendingMachine.display.getMessage());
     }
 }
