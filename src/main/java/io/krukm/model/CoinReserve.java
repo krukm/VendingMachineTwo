@@ -1,6 +1,5 @@
 package io.krukm.model;
 
-
 import java.util.ArrayList;
 import java.util.Stack;
 
@@ -56,7 +55,6 @@ public class CoinReserve {
                 break;
         }
     }
-
 
     public void removeCoin(Stack<Coin> coinStack) {
 
@@ -158,6 +156,13 @@ public class CoinReserve {
             coinTwoSleeve.push(Coin.COIN_TWO);
             coinThreeSleeve.push(Coin.COIN_THREE);
             coinFourSleeve.push(Coin.COIN_FOUR);
+        }
+    }
+
+    public void depositCoins(Stack<Coin> coinHold) {
+
+        for (Coin coin : coinHold) {
+            addCoin(coin);
         }
     }
 }

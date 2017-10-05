@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.CoinTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-10-05T18:15:46" hostname="Matthews-MacBook-Pro.local" time="0.003">
+<testsuite name="io.krukm.model.CoinTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-10-05T18:18:27" hostname="Matthews-MacBook-Pro.local" time="0.002">
   <properties/>
-  <testcase name="whenANickelIsCalledReturnNickelWeight" classname="io.krukm.model.CoinTest" time="0.001"/>
+  <testcase name="whenANickelIsCalledReturnNickelWeight" classname="io.krukm.model.CoinTest" time="0.0"/>
   <testcase name="whenANickelIsCalledReturnNickelValue" classname="io.krukm.model.CoinTest" time="0.0"/>
   <testcase name="whenANickelIsCalledReturnNickelDiameter" classname="io.krukm.model.CoinTest" time="0.0"/>
   <testcase name="whenAQuarterIsCalledReturnQuarterWeight" classname="io.krukm.model.CoinTest" time="0.0"/>
