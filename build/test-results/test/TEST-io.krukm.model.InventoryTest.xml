@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.InventoryTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-10-05T18:12:09" hostname="Matthews-MacBook-Pro.local" time="0.003">
+<testsuite name="io.krukm.model.InventoryTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-10-05T18:14:10" hostname="Matthews-MacBook-Pro.local" time="0.004">
   <properties/>
-  <testcase name="whenInventoryIsStockedTenProductOneAreAdded" classname="io.krukm.model.InventoryTest" time="0.0"/>
-  <testcase name="whenInventoryIsStockedTenProductThreeAreAdded" classname="io.krukm.model.InventoryTest" time="0.001"/>
+  <testcase name="whenInventoryIsStockedTenProductOneAreAdded" classname="io.krukm.model.InventoryTest" time="0.001"/>
+  <testcase name="whenInventoryIsStockedTenProductThreeAreAdded" classname="io.krukm.model.InventoryTest" time="0.0"/>
   <testcase name="whenInventoryIsStockedTenProductTwoAreAdded" classname="io.krukm.model.InventoryTest" time="0.0"/>
   <testcase name="getCurrentProductOneStockWithGetProductStock" classname="io.krukm.model.InventoryTest" time="0.0"/>
   <testcase name="whenProductIsNotInStockReturnFalse" classname="io.krukm.model.InventoryTest" time="0.0"/>

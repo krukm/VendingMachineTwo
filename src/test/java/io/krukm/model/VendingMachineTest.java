@@ -55,4 +55,13 @@ public class VendingMachineTest {
         vendingMachine.enoughCoinsEntered(Product.PRODUCT_TWO, coins);
         assertEquals("PRICE 0.50", vendingMachine.display.getMessage());
     }
+
+    @Test
+    public void whenEnoughCoinsAndProductSelectedDispenseProduct() {
+        while (coins.size() < 5) {
+            coins.add(Coin.COIN_FOUR);
+        }
+        vendingMachine.inventory.stockInventory();
+        assertEquals(Product.PRODUCT_ONE, vendingMachine.makePurchase(Product.PRODUCT_ONE, coins));
+    }
 }

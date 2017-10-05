@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.krukm.model.CoinTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-10-05T18:12:09" hostname="Matthews-MacBook-Pro.local" time="0.003">
+<testsuite name="io.krukm.model.CoinTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-10-05T18:14:10" hostname="Matthews-MacBook-Pro.local" time="0.002">
   <properties/>
   <testcase name="whenANickelIsCalledReturnNickelWeight" classname="io.krukm.model.CoinTest" time="0.0"/>
   <testcase name="whenANickelIsCalledReturnNickelValue" classname="io.krukm.model.CoinTest" time="0.0"/>
@@ -7,12 +7,12 @@
   <testcase name="whenAQuarterIsCalledReturnQuarterWeight" classname="io.krukm.model.CoinTest" time="0.0"/>
   <testcase name="whenADimeIsCalledReturnDimeWeight" classname="io.krukm.model.CoinTest" time="0.0"/>
   <testcase name="whenADimeIsCalledReturnDimeDiameter" classname="io.krukm.model.CoinTest" time="0.0"/>
-  <testcase name="whenADimeIsCalledReturnDimeValue" classname="io.krukm.model.CoinTest" time="0.001"/>
+  <testcase name="whenADimeIsCalledReturnDimeValue" classname="io.krukm.model.CoinTest" time="0.0"/>
   <testcase name="whenAPennyIsCalledReturnPennyWeight" classname="io.krukm.model.CoinTest" time="0.0"/>
-  <testcase name="whenAQuarterIsCalledReturnQuarterValue" classname="io.krukm.model.CoinTest" time="0.0"/>
+  <testcase name="whenAQuarterIsCalledReturnQuarterValue" classname="io.krukm.model.CoinTest" time="0.001"/>
   <testcase name="whenAQuarterIsCalledReturnQuarterDiameter" classname="io.krukm.model.CoinTest" time="0.0"/>
   <testcase name="whenAPennyIsCalledReturnPennyDiameter" classname="io.krukm.model.CoinTest" time="0.0"/>
-  <testcase name="whenAPennyIsCalledReturnPennyValue" classname="io.krukm.model.CoinTest" time="0.001"/>
+  <testcase name="whenAPennyIsCalledReturnPennyValue" classname="io.krukm.model.CoinTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
