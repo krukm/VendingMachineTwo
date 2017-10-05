@@ -112,7 +112,7 @@ public class CoinReserve {
         }
     }
 
-    public Stack<Coin> activateCoinReturn() {
+    public Stack<Coin> getCoinReturn() {
         Stack<Coin> tempReturn = new Stack<>();
 
         for (Coin coin : coinHold) {

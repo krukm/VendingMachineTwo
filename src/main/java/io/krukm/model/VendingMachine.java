@@ -1,5 +1,6 @@
 package io.krukm.model;
 
+
 import java.util.Stack;
 
 public class VendingMachine {
@@ -21,7 +22,7 @@ public class VendingMachine {
     }
 
     public Stack<Coin> activateCoinReturn() {
-        return coinReserve.activateCoinReturn();
+        return coinReserve.getCoinReturn();
     }
 
     public boolean enoughCoinsEntered(Product product, Stack<Coin> coinHold) {
@@ -38,6 +39,14 @@ public class VendingMachine {
         if (enoughCoinsEntered(product, coinHold)) {
             if (inventory.productInStock(product)) {
                 inventory.dispenseProduct(product);
+                display.setMessage(1, product.price);
+                if (coinReserve.stackTotal(coinHold) > product.price) {
+                    if (coinReserve.canMakeChange()) {
+                        coinReserve.makeChange(product.price, coinReserve.stackTotal(coinHold));
+                        activateCoinReturn();
+                    }
+                }
+                coinReserve.depositCoins(coinHold);
                 return true;
             } else if (!inventory.productInStock(product)) {
                 display.setMessage(3, product.price);
@@ -46,6 +55,4 @@ public class VendingMachine {
         }
         return false;
     }
-
-
 }
